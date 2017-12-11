@@ -15,6 +15,7 @@ class CountWordCrawler(Crawler):
     def process_data(self, data, url):
         for line in data:
             self.word_counter += line.strip().split(' ').count(self.word_to_count)
+
     def filter_links(self, links):
         filtered_links = []
         for link in links:

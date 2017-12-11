@@ -13,5 +13,6 @@ class FindWordCrawler(Crawler):
                 self.word_found = True
                 print("Word found on page: {}, line: {}".format(url, line.strip()))
                 break
+
     def is_ended(self):
         return self.word_found

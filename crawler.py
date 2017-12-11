@@ -15,7 +15,7 @@ class Crawler(ABC):
         self.visited_urls = set()
 
     def crawl(self, url):
-        links = [url]
+        links = [url] #TODO: change to queue to optimize
         base_url = url
         self.visited_urls = set()
 
